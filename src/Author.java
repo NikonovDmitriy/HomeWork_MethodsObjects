@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Author {
     private final String name;
     private final String surname;
@@ -34,6 +36,6 @@ public class Author {
 
     @Override
     public int hashCode() {
-        return Object.hash(name, surname);
+        return Objects.hash(name, surname);
     }
 }
